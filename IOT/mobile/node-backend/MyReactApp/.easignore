@@ -1,0 +1,15 @@
+# Ignore system and build files
+node_modules/
+.git/
+.expo/
+dist/
+web-build/
+
+# Ignore parent directories
+../ase_grp2/
+../postgres_data/
+**/postgres_data/
+
+# Ignore database files
+*.db
+*.sqlite

@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Ukulele Controller",
+    "slug": "ukulele-controller",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/iot_ukelele.jpeg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "package": "com.iotukelele.controller",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iot_ukelele.jpeg",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": []
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bd28fbb0-1a52-43ce-a32c-073658441bf2"
+      }
+    }
+  }
+}
