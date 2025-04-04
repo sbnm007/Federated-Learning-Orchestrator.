@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Switch, Text } from 'react-native';
-import { firebaseConfig } from './config/firebase'; // Update this line
+import { firebaseConfig } from './conf'; // Update this line
 
 
 export default function App() {
@@ -8,10 +8,11 @@ export default function App() {
 
   // State for switches
   const [fretStates, setFretStates] = useState({
-    fret_1: false,
-    fret_2: false,
-    fret_3: false,
-    fret_4: false
+    0: false,
+    1: false,
+    2: false,
+    3: false,
+    4: false
   });
   const [isStrumming, setIsStrumming] = useState(false);
 
@@ -31,7 +32,7 @@ export default function App() {
         [`fret_${fretNumber}`]: value
       };
 
-      const response = await fetch(`${baseURL}/ukulele_state.json?key=${apiKey}`, {
+      const response = await fetch(`${baseURL}/frets.json?key=${apiKey}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +66,7 @@ export default function App() {
         is_strumming: value
       };
 
-      const response = await fetch(`${baseURL}/ukulele_state.json?key=${apiKey}`, {
+      const response = await fetch(`${baseURL}/frets.json?key=${apiKey}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

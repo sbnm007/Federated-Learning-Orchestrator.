@@ -1,4 +1,0 @@
-export const firebaseConfig = {
-    baseURL: 'https://iot-ukelele-default-rtdb.europe-west1.firebasedatabase.app',
-    apiKey: 'AIzaSyCam86pYwF9P__btF-ZyDSFuLVSNuBAw_M'
-};
